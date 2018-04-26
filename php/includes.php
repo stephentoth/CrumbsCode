@@ -44,9 +44,4 @@ function GetUserFromId($inId){
 	$row = mysqli_fetch_assoc($query);
 	return new user($mysqli, $row['id'], $row['first_name'], $row['last_name'], $row['username'], $row['url'], $row['email'], $row['bio']);
 }
-
-function SendNote($inType, $inMessage){
-	echo "<div class='notification ". strtolower($inType) ."'><h2>". $inMessage ."</h2></div>";
-
-}
 ?>
