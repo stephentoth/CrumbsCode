@@ -13,7 +13,7 @@ function Register($inFirstName, $inLastName, $inUserName, $inEmail, $inPass){
 
 	//validate input!!
 	$validate = ValidateReg($preFirstName, $preLastName, $preUserName, $preEmail);
-	if ($validate == "html"){
+	if ($validate == "code"){
 		//send error message
 		return;
 
